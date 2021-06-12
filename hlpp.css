@@ -1,0 +1,126 @@
+:root {
+  --primary1: hsl(300, 69%, 71%);
+  --primary2: hsl(257, 40%, 49%);
+}
+
+body {
+  background: var(--primary2) url("images/bg-desktop.svg");
+  color: white;
+}
+
+nav img {
+  padding: 40px;
+}
+
+#grid {
+  padding-top: 36px;
+  padding-left: 55px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  border-radius: 30px;
+  background: white;
+  border: 0px solid var(--primary2);
+  color: var(--primary2);
+  width: 150px;
+  height: 44px;
+}
+
+.child2 {
+  text-align: start;
+  padding: 90px 0px 0px 40px;
+  width: 400px;
+}
+
+.child2 h1 {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.child2 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 00px;
+}
+
+button:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: 1000ms;
+  color: white;
+  background: var(--primary1);
+}
+
+footer div img {
+  width: 40px;
+  padding-right: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer div {
+  padding-right: 50px;
+}
+
+/*footer div img:hover {
+    color: var(--primary1);
+} */
+
+@media screen and (max-width: 375px) {
+  .child img {
+    width: 70%;
+    padding-left: 54px;
+    padding-top: 40px;
+  }
+
+  #grid {
+    padding: 36px 0px 0px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+
+  .child2 {
+    text-align: center;
+    width: 300px;
+    padding-left: 17px;
+  }
+
+  .child2 h1 {
+    font-size: 28px;
+  }
+
+  body {
+    background: var(--primary2) url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    font-size: 15px;
+  }
+
+  nav img {
+    padding: 30px 0px 0px 34px;
+    width: 130px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 45.5px;
+  }
+  .error {
+    padding-top: 20px;
+  }
+
+  button {
+    border-radius: 30px;
+    background: white;
+    border: 0px solid var(--primary2);
+    color: var(--primary2);
+    width: 200px;
+    height: 44px;
+  }
+}
