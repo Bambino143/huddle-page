@@ -4,7 +4,7 @@
 }
 
 body {
-  background: var(--primary2) url("images/bg-desktop.svg");
+  background: #8a2be2 url("images/bg-desktop.svg");
   color: white;
 }
 
